@@ -1,10 +1,10 @@
+import Video from "./Components/Video";
 
 
 function App() {
   return (
     <div>
-      here is the thing
-      
+      <Video/>
     </div>
   );
 }
