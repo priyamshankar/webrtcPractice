@@ -4,6 +4,7 @@ import { BrowserRouter,
   Route,
   Link,} from 'react-router-dom';
 import Lobby from "./Components/Lobby";
+import RoomTrack from "./Components/RoomTrack";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       {/* <BrowserRouter> */}
       <Routes>
         <Route path="/" element={<Lobby/>} />
+        <Route path ="/track/:roomId" element={<RoomTrack/>}/>
       </Routes>
     {/* </BrowserRouter> */}
     </div>
