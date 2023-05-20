@@ -24,6 +24,7 @@ const Lobby = () => {
       navigate(`/track/${room}`);
     },[navigate])
 
+
   useEffect(() => {
     socket.on("room:join", handleJoinRoom);
       return ()=>{
