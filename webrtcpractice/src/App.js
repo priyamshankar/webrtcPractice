@@ -9,9 +9,9 @@ import RoomTrack from "./Components/RoomTrack";
 function App() {
   return (
     <div>
-      {/* <Lobby/> */}
+      {/* <Lobby/> */}//
       {/* <BrowserRouter> */}
-      <Routes>
+      <Routes>// routes for router
         <Route path="/" element={<Lobby/>} />
         <Route path ="/track/:roomId" element={<RoomTrack/>}/>
       </Routes>

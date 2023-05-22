@@ -28,7 +28,7 @@ const Lobby = () => {
   useEffect(() => {
     socket.on("room:join", handleJoinRoom);
       return ()=>{
-        socket.off('room:join',handleJoinRoom);
+        socket.off('room:join',handleJoinRoom);//socket to room join
       }
   
   }, [socket,handleJoinRoom]);
